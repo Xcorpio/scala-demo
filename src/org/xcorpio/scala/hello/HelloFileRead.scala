@@ -1,4 +1,4 @@
-package org.xcorpio.scala
+package org.xcorpio.scala.hello
 
 import scala.io.Source
 

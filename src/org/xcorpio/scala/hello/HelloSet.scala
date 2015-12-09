@@ -1,4 +1,4 @@
-package org.xcorpio.scala
+package org.xcorpio.scala.hello
 
 object HelloSet {
   def main(args: Array[String]): Unit = {
