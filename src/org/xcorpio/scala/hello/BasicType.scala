@@ -9,5 +9,13 @@ object BasicType {
     val s = "Hello, World"
     println(s indexOf 'o')
     println(2.0.unary_-)
+    println(s toUpperCase)
+    println('a' - 'b')
+    println('e' >= 'f')
+    println( 4.5f / 2.2f)
+    println(~1)
+    println(3 & 2)
+    println(("he" + "llo") == "hello")
+    println(List(1,2,3) == List(1,2,3))
   }
 }
