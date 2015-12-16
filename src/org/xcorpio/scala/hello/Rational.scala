@@ -4,14 +4,14 @@ class Rational(n: Int, d: Int) {
   require(d!=0)
   println("Created " + n + "/" + d)
   private val g = gcd(n.abs, d.abs)
-  val numer = n / g
-  val denom = d / g
+  val numerator = n / g
+  val denominator = d / g
   
   def +(that: Rational) = 
-    new Rational(numer * that.denom + that.numer * denom, denom * that.denom)
+    new Rational(numerator * that.denominator + that.numerator * denominator, denominator * that.denominator)
   
   def *(that: Rational) = 
-    new Rational(numer * that.numer, denom * that.denom)
+    new Rational(numerator * that.numerator, denominator * that.denominator)
   
   def this(n: Int) = this(n, 1)
   
