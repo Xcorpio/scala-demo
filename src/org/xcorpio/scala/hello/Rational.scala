@@ -25,7 +25,7 @@ class Rational(n: Int, d: Int) {
 }
 object Rational {
   
-  // 隐式转换要在同一作用域
+  // 隐式转换要同一作用域
   implicit def intToRational(x: Int) = 
     new Rational(x)
   
