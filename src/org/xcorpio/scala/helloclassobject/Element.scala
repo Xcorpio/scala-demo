@@ -7,14 +7,26 @@ abstract class Element {
   def height: Int = contents.length
   def width: Int = if(height == 0) 0 else contents(0).length
   def demo: Unit = println("Element's implementation is invoked~")
+  def sayHello(): Unit = {
+    Element.staticSayHello()
+  }
+  override def toString = contents mkString "\n"
 }
 
 object Element {
+  
+  def staticSayHello(): Unit = {
+    println("hello~~")
+  }
+  
   def main(args: Array[String]): Unit = {
     println("hi")
     // class 有对应 object不用 new，实际调用apply()方法
     println(Array(1,2,3).length)
     // "abc".length 没有副作用一般不加()
     println("abc".length)
+    staticSayHello()
+    val ele = new LineElement("ss")
+    ele.sayHello()
   }
 }
