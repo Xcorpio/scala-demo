@@ -39,5 +39,9 @@ object ConstructingMap {
     
     val revesemap = for ((v, k) <- newMap) yield (k, v)
     println(revesemap)
+    
+    // sorted maps
+    val sortedmap = scala.collection.immutable.SortedMap("Bob" -> 4, "Alice" -> 5, "Tom" -> 9)
+    println("sortedmap:" + sortedmap)
   }
 }
